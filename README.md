@@ -1,12 +1,12 @@
-## Bookstore
+## REELS
 
-> A bookstore-managing app for Magic-books Inc.
+> This is a webapp to fetch a list of shows, filter them by type and view each show's details.
 
-[Live](https://bookdukka.herokuapp.com/)
+[Live](https://flickreel.herokuapp.com/)
 
 ## Project
 
-Magic-books Inc. is a fictional company based in Germany. They have requested your help to build the front-end of an application that will help them organize and manage their bookstore. They want it to be fast, dynamic and responsive to their actions and therefore you decided to build it with React & Redux.
+> Catalogue of Shows
 
 ## Built with
 
@@ -15,13 +15,14 @@ Magic-books Inc. is a fictional company based in Germany. They have requested yo
 - React-DOM
 - React-Create-App
 - Redux
+- Axios
 - npm
 - CSS
 - ES6
 
 ## Screenshot
 
-![screencapture-localhost-3000-2020-12-05-11_43_20](https://user-images.githubusercontent.com/29974825/101238292-515c8180-36f0-11eb-8e30-04ef54e405ee.png)
+![screencapture-localhost-3000-2020-12-12-22_02_30](https://user-images.githubusercontent.com/29974825/101993729-ea316500-3ccd-11eb-99df-57d06c648b4b.png)
 
 ## Getting Started
 
@@ -30,8 +31,6 @@ Magic-books Inc. is a fictional company based in Germany. They have requested yo
 - Run `npm install` to install the necessary modules;
 - Run `npm start`, the page will automatically load on [localhost:3000](localhost:3000).
 - RUn `npm test` to run the tests.
-
-## Screenshot
 
 ## Author
 
@@ -45,7 +44,7 @@ Magic-books Inc. is a fictional company based in Germany. They have requested yo
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/paulzay/bookstore/issues)
+Feel free to check the [issues page](https://github.com/paulzay/reels/issues)
 
 ## Show your support
 
