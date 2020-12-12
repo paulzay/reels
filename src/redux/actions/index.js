@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'http://api.tvmaze.com/';
+const url = 'https://api.tvmaze.com/';
 export function getShows() {
   return dispatch => {
     axios.get(`${url}shows?page1`, { mode: 'cors' })
@@ -13,7 +13,7 @@ export function getShows() {
 
 export function getShow(id) {
   return dispatch => {
-    axios.get(`http://api.tvmaze.com/shows/${id}`, { mode: 'cors' })
+    axios.get(`https://api.tvmaze.com/shows/${id}`, { mode: 'cors' })
       .then(res => {
         const show = res.data;
         dispatch({ type: 'VIEW_SHOW', show });
