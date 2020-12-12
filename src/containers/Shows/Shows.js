@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { getShows, changeFilter } from '../../redux/actions/index';
 import NetworkFilter from '../../components/Filter/Filter';
 
-class Shows extends Component{
+class Shows extends Component {
   componentDidMount() {
     const { getShows } = this.props;
     getShows();
@@ -36,9 +36,10 @@ class Shows extends Component{
 }
 
 Shows.propTypes = {
-  shows: PropTypes.array.isRequired,
+  shows: PropTypes.instanceOf(Array).isRequired,
   getShows: PropTypes.func.isRequired,
   changeFilter: PropTypes.func.isRequired,
+  filter: PropTypes.string.isRequired,
 };
 
 const mapStateToProps = state => ({
@@ -48,9 +49,9 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   getShows: () => dispatch(getShows()),
-    changeFilter: network => {
+  changeFilter: network => {
     dispatch(changeFilter(network));
   },
 });
 
-export default connect(mapStateToProps,mapDispatchToProps)(Shows);
+export default connect(mapStateToProps, mapDispatchToProps)(Shows);

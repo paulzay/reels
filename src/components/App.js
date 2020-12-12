@@ -4,7 +4,6 @@ import Story from '../containers/Show/Show';
 import './App.css';
 import Nav from '../containers/Nav/Nav';
 
-
 function App() {
   return (
     <div className="app">
@@ -18,4 +17,3 @@ function App() {
 }
 
 export default App;
-
