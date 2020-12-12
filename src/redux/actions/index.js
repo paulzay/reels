@@ -16,7 +16,7 @@ export function getShows() {
 
 export function getShow(id) {
   return (dispatch) => {
-    axios.get(`${url}/shows/${id}`, { mode: 'cors' })
+    axios.get(`http://api.tvmaze.com/shows/${id}`, { mode: 'cors' })
       .then((res) => {
         let show = res.data
         dispatch({ type: 'VIEW_SHOW', show })

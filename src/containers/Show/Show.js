@@ -18,11 +18,8 @@ class Show extends Component {
 
         return (
         <>
-            <div className="show">
-                <img className="" src={image.original} alt="Thumb" />
-                <p>{name}</p>
-            </div>
-            
+            <div></div>
+            <p>{name}</p>
         </>
         )
     }
@@ -36,8 +33,6 @@ const mapStateToProps = state => {
         _show: state.shows.show, 
     }
 }
-
-const mapDispatchToProps = dispatch =>({
-  getShow: () => dispatch(getShow()),
-});
-export default connect(mapStateToProps,mapDispatchToProps)(Show);
+export default connect(mapStateToProps, { 
+    getShow,
+})(Show);
