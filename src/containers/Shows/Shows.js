@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getShows } from '../../redux/actions/index';
+import { getShows, changeFilter } from '../../redux/actions/index';
 import NetworkFilter from '../../components/Filter/Filter';
 
 class Shows extends Component{
@@ -12,7 +12,7 @@ class Shows extends Component{
 
   render() {
     const { shows, filter, changeFilter } = this.props;
-    // const filteredshows = (filter !== 'All') ? shows.filter(show => show.network.name.toString() === filter) : shows;
+    const filteredshows = (filter !== 'All') ? shows.filter(show => show.type.toString() === filter) : shows;
 
     return (
       <>
@@ -21,10 +21,10 @@ class Shows extends Component{
         </div>
         <div className="card-columns">
           {
-            shows.map(show => (
+            filteredshows.map(show => (
               <div className="card" key={show.id}>
                 <a href={`/show/${show.id}`}>
-                  <img className="card-img-top" src={show.image.original} alt="Thumb" />
+                  <img className="card-img-top" src={show.image.medium} alt="Thumb" />
                 </a>
               </div>
             ))
@@ -43,10 +43,14 @@ Shows.propTypes = {
 
 const mapStateToProps = state => ({
   shows: state.shows.shows,
+  filter: state.filter,
 });
 
 const mapDispatchToProps = dispatch => ({
   getShows: () => dispatch(getShows()),
+    changeFilter: network => {
+    dispatch(changeFilter(network));
+  },
 });
 
 export default connect(mapStateToProps,mapDispatchToProps)(Shows);

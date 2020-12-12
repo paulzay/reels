@@ -3,12 +3,10 @@ import PropTypes from 'prop-types';
 
 const networks = [
   'All',
-  'CBS',
-  'CTV Sci-Fi Channel',
-  'CNN',
-  'The CW',
-  'HBO',
-  'Showtime',
+    'Scripted',
+  'Documentary',
+    'Talk Show',
+  'Reality',
 ];
 
 export default function NetworkFilter({ changeFilter }) {
