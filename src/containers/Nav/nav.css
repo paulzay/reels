@@ -1,17 +1,18 @@
 .nav {
-	background-color: black;
-	display: flex;
-	justify-content: space-between;
-	padding: 0 20px;
-	width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .nav img {
-	width: 100px;
+  width: 100px;
 }
+
 p {
-	margin-top: 25px;
-	color: white;
-	font-size: 30px;
-	font-weight: 800;
+  margin-top: 25px;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
 }
