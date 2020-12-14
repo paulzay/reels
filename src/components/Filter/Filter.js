@@ -7,6 +7,7 @@ const networks = [
   'Documentary',
   'Talk Show',
   'Reality',
+  'Animation',
 ];
 
 export default function NetworkFilter({ changeFilter }) {
