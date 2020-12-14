@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getShow } from '../../redux/actions/index';
+import './show.css';
 
 class Show extends Component {
   componentDidMount() {
@@ -19,19 +20,20 @@ class Show extends Component {
 
   render() {
     const {
-      name, type, language, summary,
+      name, type, language, status, runtime, premiered,image
     } = this.props._show;
 
     return (
-      <div className="show">
-        <h3 className="name">{name}</h3>
-        <div className="body">
-          <p>
-            Language:
-            {language}
-          </p>
-          <p>{type}</p>
-          <p>{summary}</p>
+      <div className="yt">
+        <img src={image && image.medium} alt="Thumb" />
+        
+        <div>
+          <h3 className="name">{name}</h3>
+          <p className="paras">Language: {language}</p>
+          <p className="paras">Type: {type}</p>
+          <p className="paras">Status {status}</p>
+          <p className="paras"> Runtime: {runtime}</p>
+          <p className="paras"> Runtime: {premiered}</p>
         </div>
       </div>
     );
