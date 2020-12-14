@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { Card, CardColumns, Spinner } from 'react-bootstrap';
 import { getShows, changeFilter } from '../../redux/actions/index';
 import NetworkFilter from '../../components/Filter/Filter';
-// import { BoxLoading } from 'react-loadingg';
 import './shows.css';
 
 class Shows extends Component {
