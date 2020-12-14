@@ -1,4 +1,3 @@
-
 import shows from '../redux/reducers/shows';
 
 describe('shows reducer', () => {
