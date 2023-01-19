@@ -2,7 +2,7 @@
 
 > This is a webapp to fetch a list of shows, filter them by type and view each show's details.
 
-[Live](https://flickreel.herokuapp.com/)
+[Live](https://reactreel.netlify.app/)
 
 ## Project
 
